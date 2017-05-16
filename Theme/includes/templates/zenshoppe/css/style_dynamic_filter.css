@@ -1,0 +1,129 @@
+.dFilter ul {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ list-style-type: none;
+ clear: both
+}
+.dFilter ul.dFilterScroll {
+ padding:10px;
+ border:1px solid #EAEAEA;
+}
+#dynamicfilterContent form > div {
+    margin: 0 0 20px;
+}
+.dFilterLink a.enabled:link, .dFilterLink a.selected:link, .dFilterLink a.enabled:hover, .dFilterLink a.selected:hover, .dFilterLink a.enabled:visited, .dFilterLink a.selected:visited {
+ color: #666;
+}
+
+.dFilterLink a.enabled:hover, .dFilterLink a.selected:hover {
+ text-decoration: underline
+}
+
+.dFilterScroll {
+ height: 130px;
+ border: 1px solid #CCCCCC;
+ overflow: auto
+}
+
+.dFilterExpand {
+ overflow: hidden
+}
+
+.dFilterDrop {
+ width: 98%
+}
+
+.dFilterLink a {
+ padding: 1px 0 1px 2px;
+ text-decoration: none;
+ font-size: 1em;
+ margin-left: 1px
+}
+
+.dFilterLink a.disabled {
+ color: #ccc;
+}
+
+.dFilterLink input[type=checkbox] {
+ margin: 0;
+ padding: 0 3px
+}
+
+.dFilterToggle {
+ display:none;
+ text-decoration:none;
+ font-size:10px;
+ cursor:pointer;
+ margin-left:5px
+}
+
+.dFilterToggle a:link, .dFilterToggle a:visited, dFilterToggle a:hover {
+ color: #000
+}
+
+.dFilterToggleImg {
+ margin-left:5px;
+ vertical-align:middle
+}
+.dFilter {
+    margin: 10px 0 0;
+}
+.dFilterHeading {
+    border-bottom: 1px solid;
+    color: #e8288a;
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 0 3px;
+}
+#dynamicfilter #dynamicfilterContent .dFilterLink {
+    line-height: 1.8;
+}
+.sideBoxContent .dFilter ul li input {
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 2px;
+}
+.dFilterClear {
+ float:right
+}
+
+#dFilterButton {
+    float: left;
+    width: auto;
+}
+#dynamicfilterContent form > div#dFilterButton {
+    margin: 0;
+}
+#dFilterButton > input {
+    height: auto;
+    margin: 0 10px;
+    min-height: 0;
+    min-width: 0;
+    padding: 5px;
+    width: auto !important;
+}
+.clear_all_filters {
+    float: right;
+    margin: 10px 4px;
+    padding-right: 5px;
+    text-align: right;
+    width: auto;
+}
+.clear_all_filters i.fa {
+    font-size: 18px;
+    margin: 0;
+}
+#dFilterClearAll {
+ text-align:center;
+ margin:1em
+}
+#dynamicfilter.leftBoxContainer {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-radius: 4px 4px 0 0;
+}
+#dynamicfilter .sideBoxContent {
+    border: medium none;
+}

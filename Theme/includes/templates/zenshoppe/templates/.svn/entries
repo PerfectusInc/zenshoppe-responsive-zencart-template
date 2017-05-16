@@ -1,0 +1,525 @@
+10
+
+dir
+0
+https://riouxsvn.com/svn/edifysvn/includes/templates/edify/templates
+https://riouxsvn.com/svn/edifysvn
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6775f716-37f5-4ce2-91cf-53ff191afe44
+
+tpl_modules_checkout_new_address.php
+file
+
+
+
+add
+
+tpl_create_account_success_default.php
+file
+
+
+
+add
+
+tpl_modules_products_all_listing.php
+file
+
+
+
+add
+
+tpl_modules_main_product_image-1.php
+file
+
+
+
+add
+
+tpl_login_default.php
+file
+
+
+
+add
+
+tpl_modules_main_product_image.php
+file
+
+
+
+add
+
+tpl_discount_coupon_default.php
+file
+
+
+
+add
+
+tpl_account_history_default.php
+file
+
+
+
+add
+
+tpl_modules_category_row.php
+file
+
+
+
+add
+
+tpl_advanced_search_default.php
+file
+
+
+
+add
+
+tpl_modules_product_listing.php
+file
+
+
+
+add
+
+tpl_product_reviews_write_default.php
+file
+
+
+
+add
+
+tpl_contact_us_default.php
+file
+
+
+
+add
+
+tpl_checkout_payment_default.php
+file
+
+
+
+add
+
+tpl_modules_featured_products.php
+file
+
+
+
+add
+
+tpl_checkout_payment_address_default.php
+file
+
+
+
+add
+
+tpl_conditions_default.php
+file
+
+
+
+add
+
+tpl_modules_listing_display_order.php
+file
+
+
+
+add
+
+tpl_index_product_list1.php
+file
+
+
+
+add
+
+tpl_featured_products_default.php
+file
+
+
+
+add
+
+tpl_modules_whats_new.php
+file
+
+
+
+add
+
+tpl_product_reviews_default.php
+file
+
+
+
+add
+
+tpl_advanced_search_result_default.php
+file
+
+
+
+add
+
+tpl_products_next_previous.php
+file
+
+
+
+add
+
+tpl_address_book_process_default.php
+file
+
+
+
+add
+
+tpl_checkout_success_default.php
+file
+
+
+
+add
+
+tpl_modules_category_icon_display.php
+file
+
+
+
+add
+
+tpl_index_product_list.php
+file
+
+
+
+add
+
+tpl_modules_products_featured_listing.php
+file
+
+
+
+add
+
+tpl_address_book_default.php
+file
+
+
+
+add
+
+tpl_site_map_default.php
+file
+
+
+
+add
+
+tpl_modules_also_purchased_products.php
+file
+
+
+
+add
+
+tpl_specials_default.php
+file
+
+
+
+add
+
+tpl_checkout_shipping_default.php
+file
+
+
+
+add
+
+tpl_modules_checkout_address_book.php
+file
+
+
+
+add
+
+tpl_index_categories.php
+file
+
+
+
+add
+
+tpl_modules_attributes.php
+file
+
+
+
+add
+
+tpl_checkout_shipping_address_default.php
+file
+
+
+
+add
+
+tpl_product_info_display.php
+file
+
+
+
+add
+
+tpl_privacy_default.php
+file
+
+
+
+add
+
+tpl_reviews_default.php
+file
+
+
+
+add
+
+tpl_unsubscribe_default.php
+file
+
+
+
+add
+
+tpl_time_out_default.php
+file
+
+
+
+add
+
+tpl_ezpages_bar_header.php
+file
+
+
+
+add
+
+tpl_modules_address_book_details.php
+file
+
+
+
+add
+
+tpl_account_history_info_default.php
+file
+
+
+
+add
+
+tpl_modules_specials_default.php
+file
+
+
+
+add
+
+tpl_account_default.php
+file
+
+
+
+add
+
+tpl_product_reviews_info_default.php
+file
+
+
+
+add
+
+tpl_account_edit_default.php
+file
+
+
+
+add
+
+tpl_modules_create_account.php
+file
+
+
+
+add
+
+tpl_gv_faq_default.php
+file
+
+
+
+add
+
+tpl_index_default.php
+file
+
+
+
+add
+
+tpl_products_new_default.php
+file
+
+
+
+add
+
+tpl_index_categories.no_cat_image.php
+file
+
+
+
+add
+
+tpl_logoff_default.php
+file
+
+
+
+add
+
+tpl_checkout_confirmation_default.php
+file
+
+
+
+add
+
+tpl_modules_product_listing1.php
+file
+
+
+
+add
+
+tpl_account_password_default.php
+file
+
+
+
+add
+
+tpl_create_account_default.php
+file
+
+
+
+add
+
+tpl_modules_additional_images.php
+file
+
+
+
+add
+
+tpl_modules_order_totals.php
+file
+
+
+
+add
+
+tpl_account_notifications_default.php
+file
+
+
+
+add
+
+tpl_page_not_found_default.php
+file
+
+
+
+add
+
+tpl_password_forgotten_default.php
+file
+
+
+
+add
+
+tpl_modules_products_new_listing.php
+file
+
+
+
+add
+
+tpl_products_all_default.php
+file
+
+
+
+add
+
+tpl_account_newsletters_default.php
+file
+
+
+
+add
+
+tpl_modules_shipping_estimator.php
+file
+
+
+
+add
+
+tpl_shippinginfo_default.php
+file
+
+
+
+add
+
+tpl_shopping_cart_default.php
+file
+
+
+
+add
+

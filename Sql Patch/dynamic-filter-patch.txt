@@ -1,0 +1,31 @@
+SELECT @cid:=configuration_group_id
+FROM configuration_group
+WHERE configuration_group_title= 'Dynamic Filter';
+DELETE FROM configuration WHERE configuration_group_id = @cid;
+DELETE FROM configuration_group WHERE configuration_group_id = @cid;
+INSERT INTO configuration_group VALUES (NULL, 'Dynamic Filter', 'Dynamic Filter Settings', '1', '1');
+SET @cid=last_insert_id();
+UPDATE configuration_group SET sort_order = @cid WHERE configuration_group_id = @cid;
+INSERT INTO configuration VALUES (NULL, 'Enable on Category Pages', 'FILTER_CATEGORY', 'Yes', 'Enable the filter on category pages?', @cid, '10', now(), now(), NULL, "zen_cfg_select_option(array('Yes', 'No'),"),
+                                 (NULL, 'Enable on All Products Page', 'FILTER_ALL', 'Yes', 'Enable the filter on all products page?', @cid, '20', now(), now(), NULL, "zen_cfg_select_option(array('Yes', 'No'),"),
+                                 (NULL, 'Enable on New Products Page', 'FILTER_NEW', 'Yes', 'Enable the filter on new products page?', @cid, '30', now(), now(), NULL, "zen_cfg_select_option(array('Yes', 'No'),"),
+                                 (NULL, 'Enable on Featured Products Page', 'FILTER_FEATURED', 'Yes', 'Enable the filter on featured products page?', @cid, '40', now(), now(), NULL, "zen_cfg_select_option(array('Yes', 'No'),"),
+                                 (NULL, 'Enable on Specials Page', 'FILTER_SPECIALS', 'Yes', 'Enable the filter on specials page?', @cid, '50', now(), now(), NULL, "zen_cfg_select_option(array('Yes', 'No'),"),
+                                 (NULL, 'Enable on Search Page', 'FILTER_SEARCH', 'Yes', 'Enable the filter on advanced search page?', @cid, '60', now(), now(), NULL, "zen_cfg_select_option(array('Yes', 'No'),"),
+                                 (NULL, 'Filter Style', 'FILTER_STYLE', 'Checkbox - Multi', 'How are the filters to be applied?<br /><br /><strong>Link</strong> - Each option is a link; Only one filter can be applied at a time.<br /><strong>Dropdown (Single)</strong> - Each option is part of a drop down list; Only one filter can be applied at a time.<br /><strong>Dropdown (Multi)</strong> - Each option is part of a drop down list; Multiple filters can be applied at a time.<br /><strong>Checkbox (Single)</strong> - Each option is a checkbox; Only one filter can be applied at a time.<br /><strong>Checkbox (Multi)</strong> - Each option is a checkbox; Multiple filters can be applied at a time.', @cid, '70', now(), now(), NULL, "zen_cfg_select_option(array('Link', 'Dropdown - Single', 'Dropdown - Multi', 'Checkbox - Single', 'Checkbox - Multi'),"),
+                                 (NULL, 'Disabled Options Method', 'FILTER_METHOD', 'Greyed', 'How are the unavailable filter options to be disabled?<br /><br /><strong>Greyed</strong> - Grey out the unavailable options.<br /><strong>Hidden</strong> - Hide the unavailable options.', @cid, '80', now(), now(), NULL, "zen_cfg_select_option(array('Greyed', 'Hidden'),"),
+                                 (NULL, 'Options Box Style', 'FILTER_OPTIONS_STYLE', 'Scroll', 'Which style of box should be used when the maximum number of options has been reached?<br /><br /><strong>Scroll</strong> - Scroll box.<br /><strong>Expand</strong> - Expanding box with More/Less link.<br /><br /><strong>Note: This option is only applicatble with Link or Checkbox filter styles.</strong>', @cid, '90', now(), now(), NULL, "zen_cfg_select_option(array('Scroll', 'Expand'),"),
+                                 (NULL, 'Maximum Number of Options', 'FILTER_MAX_OPTIONS', '9', 'What is the maximum number of options to be displayed before scroll bar/More link is visible?<br /><br /><strong>Note: This option is only applicatble with Link or Checkbox filter styles.</strong>', @cid, '100', now(), now(), NULL, NULL),
+                                 (NULL, 'Maximum Number of Price Ranges', 'FILTER_MAX_RANGES', '5', 'What is the maximum number of price range groups?<br /><br /><strong>Note: This can be overridden by the Maximum Price Range parameter</strong>', @cid, '110', now(), now(), NULL, NULL),
+                                 (NULL, 'Minimum Price Range', 'FILTER_MIN_PRICE', '10', 'What is the minimum gap in the price ranges?<br />Set as zero to deactivate.', @cid, '120', now(), now(), NULL, NULL),
+                                 (NULL, 'Maximum Price Range', 'FILTER_MAX_PRICE', '25', 'What is the minimum gap in the price ranges?<br />Set as zero to deactivate.', @cid, '130', now(), now(), NULL, NULL),
+                                 (NULL, 'Include Options', 'FILTER_OPTIONS_INCLUDE', '', 'Enter the list of option IDs to be included in the filter, separated by commas (i.e. 1,2,3)<br />Only the option numbers listed here will appear in the filter.<br />Leave blank to deactivate.', @cid, '140', now(), now(), NULL, NULL),
+                                 (NULL, 'Exclude Options', 'FILTER_OPTIONS_EXCLUDE', '', 'Enter the list of option IDs to be excluded from the filter, separated by commas (i.e. 1,2,3)<br />The option numbers listed here will <strong>not</strong> appear in the filter.<br />Leave blank to deactivate.', @cid, '150', now(), now(), NULL, NULL),
+                                 (NULL, 'Google Event Tracking', 'FILTER_GOOGLE_TRACKING', 'No', 'Use Google Event Tracking?<br /><br /><strong>No</strong> - Do not use Google Event Tracking<br /><strong>ga.js</strong> - Use traditional ga.js Google Event Tracking method<br /><strong>Asynchronous</strong> - Use new asynchronous Google Event Tracking method<br /><br /><strong>Note: Requires Google Analytics Code</strong>', @cid, '160', now(), now(), NULL, "zen_cfg_select_option(array('No', 'ga.js', 'Asynchronous'),");
+
+
+/*
+zencart 1.5 mods
+*/
+DELETE FROM admin_pages WHERE page_key='configDynamicFilter';
+INSERT INTO admin_pages (page_key,language_key,main_page,page_params,menu_key,display_on_menu,sort_order) VALUES ('configDynamicFilter','BOX_CONFIGURATION_DYNAMIC_FILTER','FILENAME_CONFIGURATION',CONCAT('gID=',@cid), 'configuration', 'Y', @cid);  

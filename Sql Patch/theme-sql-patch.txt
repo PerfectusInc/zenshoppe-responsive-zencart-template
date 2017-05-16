@@ -1,0 +1,426 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `zenshoppe`
+--
+
+----------------------------------------------------------
+
+
+--
+-- Table structure for table `zenshoppe`
+--
+
+CREATE TABLE IF NOT EXISTS `zenshoppe` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `theme_color` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `logo_image` varchar(255) NOT NULL,
+  `store_address` varchar(255) NOT NULL,
+  `store_map` text NOT NULL,
+  `newsletter_details` text NOT NULL,
+  `aboutus_text` text NOT NULL,
+  `store_contact` varchar(255) NOT NULL,
+  `store_skype` varchar(255) NOT NULL,
+  `store_email` varchar(255) NOT NULL,
+  `store_copyright` varchar(255) NOT NULL,
+  `store_fax` varchar(255) NOT NULL,
+  `facebook_link` varchar(255) NOT NULL,
+  `twitter_link` varchar(255) NOT NULL,
+  `pinterest_link` varchar(255) NOT NULL,
+  `google_link` varchar(255) NOT NULL,
+  `tumblr_link` varchar(255) NOT NULL,
+  `linkedin_link` varchar(255) NOT NULL,
+  `youtube_link` varchar(255) NOT NULL,
+  `payment_image` varchar(255) NOT NULL,
+  `banner1_slider` varchar(255) NOT NULL,
+  `banner2_slider` varchar(255) NOT NULL,
+  `banner3_slider` varchar(255) NOT NULL,
+  `banner1` varchar(255) NOT NULL,
+  `banner1_link` varchar(255) NOT NULL,
+  `banner1_title` varchar(255) NOT NULL,
+  `banner2` varchar(255) NOT NULL,
+  `banner2_link` varchar(255) NOT NULL,
+  `banner2_title` varchar(255) NOT NULL,
+  `banner3` varchar(255) NOT NULL,
+  `banner3_link` varchar(255) NOT NULL,
+  `banner3_title` varchar(255) NOT NULL,
+  `banner1_subtitle` varchar(255) NOT NULL,
+  `banner2_subtitle` varchar(255) NOT NULL,
+  `banner3_subtitle` varchar(255) NOT NULL,
+  `bottom_banner1` varchar(255) NOT NULL,
+  `bottom_banner2` varchar(255) NOT NULL,
+  `bottom_banner1_link` varchar(255) NOT NULL,
+  `bottom_banner2_link` varchar(255) NOT NULL,
+  `bottom_banner1_subtitle` varchar(255) NOT NULL,
+  `bottom_banner2_subtitle` varchar(255) NOT NULL,
+  `bottom_banner1_title` varchar(255) NOT NULL,
+  `bottom_banner2_title` varchar(255) NOT NULL,
+  `featured_block_heading` varchar(255) NOT NULL,
+  `featured_block_subtitle1` varchar(255) NOT NULL,
+  `featured_block_subtitle2` varchar(255) NOT NULL,
+  `featured_block_subtitle3` varchar(255) NOT NULL,
+  `custom_block_bg` varchar(255) NOT NULL,
+  `custom_block_heading` text NOT NULL,
+  `custom_services_block_bg` varchar(255) NOT NULL,
+  `custom_block1_icon` varchar(255) NOT NULL,
+  `custom_block1_title` varchar(255) NOT NULL,
+  `custom_block1_subtitle` text NOT NULL,
+  `custom_block2_icon` varchar(255) NOT NULL,
+  `custom_block2_title` varchar(255) NOT NULL,
+  `custom_block2_subtitle` text NOT NULL,
+  `custom_block3_icon` varchar(255) NOT NULL,
+  `custom_block3_title` varchar(255) NOT NULL,
+  `custom_block3_subtitle` text NOT NULL,
+  `custom_block4_icon` varchar(255) NOT NULL,
+  `custom_block4_title` varchar(255) NOT NULL,
+  `custom_block4_subtitle` text NOT NULL,
+  `slideshow_block_subtitle1` varchar(255) NOT NULL,
+  `slideshow_block_subtitle2` varchar(255) NOT NULL,
+  `slideshow_block_subtitle3` varchar(255) NOT NULL,
+  `slideshow_block_heading` varchar(255) NOT NULL,
+  `twitter_box` text NOT NULL,
+  `facebook_box` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `zenshoppe`
+--
+
+INSERT INTO `zenshoppe` (`id`, `theme_color`, `logo_image`, `store_address`, `store_map`, `newsletter_details`, `aboutus_text`, `store_contact`, `store_skype`, `store_email`, `store_copyright`, `store_fax`, `facebook_link`, `twitter_link`, `pinterest_link`, `google_link`, `tumblr_link`, `linkedin_link`, `youtube_link`, `payment_image`, `banner1_slider`, `banner2_slider`, `banner3_slider`, `banner1`, `banner1_link`, `banner1_title`, `banner2`, `banner2_link`, `banner2_title`, `banner3`, `banner3_link`, `banner3_title`, `banner1_subtitle`, `banner2_subtitle`, `banner3_subtitle`, `bottom_banner1`, `bottom_banner2`, `bottom_banner1_link`, `bottom_banner2_link`, `bottom_banner1_subtitle`, `bottom_banner2_subtitle`, `bottom_banner1_title`, `bottom_banner2_title`, `featured_block_heading`, `featured_block_subtitle1`, `featured_block_subtitle2`, `featured_block_subtitle3`, `custom_block_bg`, `custom_block_heading`, `custom_services_block_bg`, `custom_block1_icon`, `custom_block1_title`, `custom_block1_subtitle`, `custom_block2_icon`, `custom_block2_title`, `custom_block2_subtitle`, `custom_block3_icon`, `custom_block3_title`, `custom_block3_subtitle`, `custom_block4_icon`, `custom_block4_title`, `custom_block4_subtitle`, `slideshow_block_subtitle1`, `slideshow_block_subtitle2`, `slideshow_block_subtitle3`, `slideshow_block_heading`, `twitter_box`, `facebook_box`) VALUES
+(1, '#0099CC,#888888', 'logo.png', '12, Auburn Groove, Hawthorn East, VIC, Australia-3123', '<iframe src="https://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=Auburn+Grove,+Hawthorn,+Victoria,+Australia&aq=0&oq=Auburn+Groove,+Hawthorn&sll=23.223279,72.657137&sspn=0.07651,0.169086&ie=UTF8&hq=&hnear=Auburn+Grove,+Hawthorn+East+Victoria+3123,+Australia&t=m&z=14&ll=-37.825499,145.04689&output=embed"><br /><small><a href="https://maps.google.co.in/maps?f=q&source=embed&hl=en&geocode=&q=Auburn+Grove,+Hawthorn,+Victoria,+Australia&aq=0&oq=Auburn+Groove,+Hawthorn&sll=23.223279,72.657137&sspn=0.07651,0.169086&ie=UTF8&hq=&hnear=Auburn+Grove,+Hawthorn+East+Victoria+3123,+Australia&t=m&z=14&ll=-37.825499,145.04689" style="color:#0000FF;text-align:left">View Larger Map</a></small></iframe>', '<!-- Begin MailChimp Signup Form -->\r\n<div id="mc_embed_signup">\r\n<form action="http://elegantdesignhub.us3.list-manage1.com/subscribe/post?u=aec0ecc511b9e4dec6925a777&amp;id=3f25e396e2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>\r\n<label for="mce-EMAIL">Sign up for our newsletter for exclusive updates on  new products, offers and more.</label>\r\n	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>\r\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n    <div style="position: absolute; left: -5000px;"><input type="text" name="b_aec0ecc511b9e4dec6925a777_3f25e396e2" tabindex="-1" value=""></div>\r\n    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>\r\n</form>\r\n</div>', 'Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque. vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet, tincidunt ac.', '+1-145-234-8967', 'skype_contact', 'info@domain.com', '2014 Zenshoppe Demo Store. All Rights Reserved. Powered by Zencart.', '+1-145-234-8967', 'envato', 'envato', 'envato', 'https://plus.google.com/', 'https://www.tumblr.com/', 'http://www.linkedin.com/company/envato', 'http://www.youtube.com/user/Envato', 'payment.png', 'banner-slide-1.jpg', 'banner-slide-2.jpg', 'banner-slide-3.jpg', 'top-banner-1.jpg', '#', 'New Arrivals', 'top-banner-2.jpg', '#', 'Hot Collection', 'top-banner-3.jpg', '#', 'New Trends', 'Shop Now', 'Shop Now', 'Shop Now', 'image-1.jpg', 'image-2.jpg', '#', '#', 'Shop Now', 'Shop Now', 'Cool Summer Trends', 'Fashion For Women', 'Weekly', 'Featured Products', 'Get Extra 10% Cashback on every Order', 'Buy Now', 'bg-featured.jpg', '<h2> Welcome to Zen-Shoppe</h2>\r\n<h4>We work hard to offer you the Best Services</h4>', 'bg_services.png', 'fa fa-truck', 'Free Shipping', 'Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.\r\n\r\nLorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.', 'fa fa-refresh', 'Free Returns', 'Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.\r\n\r\nLorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.', 'fa fa-clock-o', 'Assistance 24/7', 'Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.\r\n\r\nLorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.', 'fa fa-lock', 'Secured Payment', 'Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.\r\n\r\nLorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit ameconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.', 'OFF!! BUY NOW', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem vista quae ab illo inventore veritatis et quasi architecto beatae.', 'fa fa-arrow-circle-right fa-3x', '20%', '<a class="twitter-timeline"  href="https://twitter.com/envato" data-widget-id="361461695882866689">Tweets by @envato</a>', 'envato');
+
+
+--
+-- Table structure for table `zenshoppe_slideshow`
+--
+
+CREATE TABLE IF NOT EXISTS `zenshoppe_slideshow` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `slideshow_image` varchar(255) NOT NULL,
+  `slideshow_caption` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=87 ;
+
+--
+-- Dumping data for table `zenshoppe_slideshow`
+--
+
+INSERT INTO `zenshoppe_slideshow` (`id`, `slideshow_image`, `slideshow_caption`) VALUES
+(71, '3.jpg', '<h3 class="fadeInDown-1">Fashion show 2016</h3>\r\n<h2 class="fadeInDown-2">New Collection This Summer!</h2>\r\n<h4 class="fadeInDown-3">Quisque luctus ullamcorper luctus.</h4>\r\n<a href="#" class="fadeInDown-3">shop now</a>'),
+(76, '1.jpg', '<h3 class="fadeInDown-1">Fashion show 2016</h3>\r\n<h2 class="fadeInDown-2">New Collection This Summer!</h2>\r\n<h4 class="fadeInDown-3">Quisque luctus ullamcorper luctus.</h4>\r\n<a href="#" class="fadeInDown-3">shop now</a>'),
+(86, '2.jpg', '<h3 class="fadeInDown-1">Fashion show 2016</h3>\r\n<h2 class="fadeInDown-2">New Collection This Summer!</h2>\r\n<h4 class="fadeInDown-3">Quisque luctus ullamcorper luctus.</h4>\r\n<a href="#" class="fadeInDown-3">shop now</a>');
+
+
+UPDATE layout_boxes set layout_box_status='0',layout_box_location='0',layout_box_sort_order='6' where layout_box_name='banner_box_all.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='0',layout_box_sort_order='0' where layout_box_name='best_sellers.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='1',layout_box_sort_order='0' where layout_box_name='categories.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='1',layout_box_sort_order='5' where layout_box_name='featured.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='0',layout_box_location='1',layout_box_sort_order='1' where layout_box_name='manufacturer_info.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='0',layout_box_location='0',layout_box_sort_order='5' where layout_box_name='manufacturers.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='1',layout_box_sort_order='4' where layout_box_name='order_history.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='0',layout_box_sort_order='3' where layout_box_name='reviews.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='1',layout_box_sort_order='3' where layout_box_name='shopping_cart.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='0',layout_box_location='0',layout_box_sort_order='2' where layout_box_name='specials.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='0',layout_box_location='0',layout_box_sort_order='1' where layout_box_name='whats_new.php' and layout_template='zenshoppe';
+UPDATE layout_boxes set layout_box_status='1',layout_box_location='1',layout_box_sort_order='0' where layout_box_name='dynamic_filter.php' and layout_template='zenshoppe';
+
+UPDATE configuration set configuration_value='false' where configuration_key='SHOW_COUNTS';
+UPDATE configuration set configuration_value='9' where configuration_key='MAX_DISPLAY_SPECIAL_PRODUCTS';
+UPDATE configuration set configuration_value='8' where configuration_key='MAX_DISPLAY_NEW_PRODUCTS';
+UPDATE configuration set configuration_value='8' where configuration_key='MAX_DISPLAY_SPECIAL_PRODUCTS_INDEX';
+UPDATE configuration set configuration_value='8' where configuration_key='MAX_DISPLAY_SEARCH_RESULTS_FEATURED';
+UPDATE configuration set configuration_value='5' where configuration_key='MAX_DISPLAY_NEW_REVIEWS';
+UPDATE configuration set configuration_value='4' where configuration_key='MAX_RANDOM_SELECT_REVIEWS';
+UPDATE configuration set configuration_value='2' where configuration_key='MAX_RANDOM_SELECT_NEW';
+UPDATE configuration set configuration_value='2' where configuration_key='MAX_RANDOM_SELECT_SPECIALS';
+UPDATE configuration set configuration_value='10' where configuration_key='MAX_DISPLAY_PRODUCTS_NEW';
+UPDATE configuration set configuration_value='10' where configuration_key='MAX_DISPLAY_PRODUCTS_FEATURED_PRODUCTS';
+UPDATE configuration set configuration_value='10' where configuration_key='MAX_DISPLAY_PRODUCTS_ALL';
+UPDATE configuration set configuration_value='10' where configuration_key='MAX_DISPLAY_BESTSELLERS';
+
+UPDATE configuration set configuration_value='100' where configuration_key='SMALL_IMAGE_WIDTH';
+UPDATE configuration set configuration_value='' where configuration_key='SMALL_IMAGE_HEIGHT';
+UPDATE configuration set configuration_value='' where configuration_key='SUBCATEGORY_IMAGE_WIDTH';
+UPDATE configuration set configuration_value='' where configuration_key='SUBCATEGORY_IMAGE_HEIGHT';
+UPDATE configuration set configuration_value='' where configuration_key='CATEGORY_ICON_IMAGE_WIDTH';
+UPDATE configuration set configuration_value='' where configuration_key='CATEGORY_ICON_IMAGE_HEIGHT';
+UPDATE configuration set configuration_value='' where configuration_key='IMAGE_SHOPPING_CART_WIDTH';
+UPDATE configuration set configuration_value='100' where configuration_key='IMAGE_SHOPPING_CART_HEIGHT';
+UPDATE configuration set configuration_value='true' where configuration_key='CONFIG_CALCULATE_IMAGE_SIZE';
+UPDATE configuration set configuration_value='' where configuration_key='SUBCATEGORY_IMAGE_TOP_WIDTH';
+UPDATE configuration set configuration_value='' where configuration_key='SUBCATEGORY_IMAGE_TOP_HEIGHT';
+UPDATE configuration set configuration_value='300' where configuration_key='MEDIUM_IMAGE_WIDTH';
+UPDATE configuration set configuration_value='0' where configuration_key='MEDIUM_IMAGE_HEIGHT';
+UPDATE configuration set configuration_value='280' where configuration_key='IMAGE_PRODUCT_LISTING_WIDTH';
+UPDATE configuration set configuration_value='220' where configuration_key='IMAGE_PRODUCT_LISTING_HEIGHT';
+UPDATE configuration set configuration_value='280' where configuration_key='IMAGE_PRODUCT_NEW_LISTING_WIDTH';
+UPDATE configuration set configuration_value='220' where configuration_key='IMAGE_PRODUCT_NEW_LISTING_HEIGHT';
+UPDATE configuration set configuration_value='220' where configuration_key='IMAGE_PRODUCT_NEW_WIDTH';
+UPDATE configuration set configuration_value='0' where configuration_key='IMAGE_PRODUCT_NEW_HEIGHT';
+UPDATE configuration set configuration_value='220' where configuration_key='IMAGE_FEATURED_PRODUCTS_LISTING_WIDTH';
+UPDATE configuration set configuration_value='0' where configuration_key='IMAGE_FEATURED_PRODUCTS_LISTING_HEIGHT';
+UPDATE configuration set configuration_value='280' where configuration_key='IMAGE_PRODUCT_ALL_LISTING_WIDTH';
+UPDATE configuration set configuration_value='220' where configuration_key='IMAGE_PRODUCT_ALL_LISTING_HEIGHT';
+UPDATE configuration set configuration_value='1' where configuration_key='PROPORTIONAL_IMAGES_STATUS';
+
+UPDATE configuration set configuration_value='1' where configuration_key='PRODUCT_LIST_IMAGE';
+UPDATE configuration set configuration_value='0' where configuration_key='PRODUCT_LIST_MANUFACTURER';
+UPDATE configuration set configuration_value='0' where configuration_key='PRODUCT_LIST_MODEL';
+UPDATE configuration set configuration_value='2' where configuration_key='PRODUCT_LIST_NAME';
+UPDATE configuration set configuration_value='3' where configuration_key='PRODUCT_LIST_PRICE';
+UPDATE configuration set configuration_value='0' where configuration_key='PRODUCT_LIST_QUANTITY';
+UPDATE configuration set configuration_value='0' where configuration_key='PRODUCT_LIST_WEIGHT';
+UPDATE configuration set configuration_value='3' where configuration_key='PREV_NEXT_BAR_LOCATION';
+UPDATE configuration set configuration_value='3' where configuration_key='PRODUCT_LISTING_MULTIPLE_ADD_TO_CART';
+UPDATE configuration set configuration_value='false' where configuration_title='Add period prefix to cookie domain';
+
+UPDATE configuration set configuration_value='yes' where configuration_key='IH_RESIZE';
+UPDATE configuration set configuration_value='false' where configuration_key='ACCOUNT_COMPANY';
+
+UPDATE configuration set configuration_value='6' where configuration_key='SHOW_PRODUCT_INFO_COLUMNS_ALSO_PURCHASED_PRODUCTS';
+UPDATE configuration set configuration_value='1' where configuration_key='PRODUCT_INFO_PREVIOUS_NEXT';
+
+UPDATE configuration set configuration_value='' where configuration_key='BREAD_CRUMBS_SEPARATOR';
+UPDATE configuration set configuration_value='1' where configuration_key='DEFINE_BREADCRUMB_STATUS';
+UPDATE configuration set configuration_value='false' where configuration_key='SHOW_CATEGORIES_BOX_SPECIALS';
+UPDATE configuration set configuration_value='false' where configuration_key='SHOW_CATEGORIES_BOX_PRODUCTS_NEW';
+UPDATE configuration set configuration_value='false' where configuration_key='SHOW_CATEGORIES_BOX_FEATURED_PRODUCTS';
+UPDATE configuration set configuration_value='false' where configuration_key='SHOW_CATEGORIES_BOX_PRODUCTS_ALL';
+UPDATE configuration set configuration_value='1' where configuration_key='SHOW_CUSTOMER_GREETING';
+UPDATE configuration set configuration_value='&nbsp;-' where configuration_title='Categories Separator between the Category Name and Count' and configuration_key='CATEGORIES_SEPARATOR';
+UPDATE configuration set configuration_value='<i class="fa fa-angle-right"></i>' where configuration_title='Categories Separator between the Category Name and Sub Categories';
+UPDATE configuration set configuration_value='yes' where configuration_title='CSS Buttons';
+UPDATE configuration set configuration_value='True' where configuration_key='USE_SPLIT_LOGIN_MODE';
+UPDATE configuration set configuration_value='false' where configuration_key='DISPLAY_CART';
+UPDATE configuration set configuration_value='9' where configuration_key='MAX_DISPLAY_PRODUCTS_ALL';
+UPDATE configuration set configuration_value='9' where configuration_key='MAX_DISPLAY_PRODUCTS_NEW';
+UPDATE configuration set configuration_value='9' where configuration_key='MAX_DISPLAY_PRODUCTS_FEATURED_PRODUCTS';
+UPDATE configuration set configuration_value='0' where configuration_key='PRODUCT_LIST_FILTER';
+UPDATE configuration set configuration_value='2' where configuration_key='SHOW_SHIPPING_ESTIMATOR_BUTTON';
+
+
+UPDATE template_select set template_dir='zenshoppe';
+
+
+/**
+ * Zen Lightbox
+ *
+ * @author Alex Clarke (aclarke@ansellandclarke.co.uk)
+ * @copyright Copyright 2003-2005 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: install.sql 2008-12-17 aclarke $
+ */
+
+INSERT INTO `configuration_group` VALUES (NULL, 'Zen Lightbox', 'Configure Zen Lightbox settings', '0', '1');
+UPDATE `configuration_group` SET `sort_order` = LAST_INSERT_ID() WHERE `configuration_group_id` = LAST_INSERT_ID();
+
+SELECT @cgi := `configuration_group_id` FROM `configuration_group` WHERE `configuration_group_title` = 'Zen Lightbox';
+
+INSERT INTO `configuration` (`configuration_id`, `configuration_title`, `configuration_key`, `configuration_value`, `configuration_description`, `configuration_group_id`, `sort_order`, `last_modified`, `date_added`, `use_function`, `set_function`) VALUES
+(NULL, '<b>Zen Lightbox</b>', 'ZEN_LIGHTBOX_STATUS', 'true', '<br />If true, all product images on the following pages will be displayed within a lightbox:<br /><br />- document_general_info<br />- document_product_info<br />- page (EZ-Pages)<br />- product_free_shipping_info<br />- product_info<br />- product_music_info<br />- product_reviews<br />- product_reviews_info<br />- product_reviews_write<br /><br /><b>Default: true</b>', @cgi, 100, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''), '),
+(NULL, 'Overlay Opacity', 'ZEN_LIGHTBOX_OVERLAY_OPACITY', '0.8', '<br />Controls the transparency of the overlay.<br /><br /><b>Default: 0.8</b>', @cgi, 101, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''0'', ''0.1'', ''0.2'', ''0.3'', ''0.4'', ''0.5'', ''0.6'', ''0.7'', ''0.8'', ''0.9'', ''1''), '),
+(NULL, 'Overlay Fade Duration', 'ZEN_LIGHTBOX_OVERLAY_FADE_DURATION', '400', '<br />Controls the fade duration of the overlay.<br /><br />Note: This value is measured in milliseconds.<br /><br /><b>Default: 400</b><br />', @cgi, 102, NOW(), NOW(), NULL, NULL),
+(NULL, 'Resize Duration', 'ZEN_LIGHTBOX_RESIZE_DURATION', '400', '<br />Controls the speed of the image resizing.<br /><br />Note: This value is measured in milliseconds.<br /><br /><b>Default: 400</b><br />', @cgi, 103, NOW(), NOW(), NULL, NULL),
+(NULL, 'Resize Transition', 'ZEN_LIGHTBOX_RESIZE_TRANSITION', 'false', '<br />Allows for custom control over the transition effect used to animate the lightbox.<br /><br /><b>Default: false</b><br />', @cgi, 104, NOW(), NOW(), NULL, NULL),
+(NULL, 'Initial Width', 'ZEN_LIGHTBOX_INITIAL_WIDTH', '250', '<br />If Enable Resize Animations is set to true, the lightbox will resize its width from this value to the current image width, when first displayed.<br /><br />Note: This value is measured in pixels.<br /><br /><b>Default: 250</b><br />', @cgi, 105, NOW(), NOW(), NULL, NULL),
+(NULL, 'Initial Height', 'ZEN_LIGHTBOX_INITIAL_HEIGHT', '250', '<br />If Enable Resize Animations is set to true, the lightbox will resize its height from this value to the current image height, when first displayed.<br /><br />Note: This value is measured in pixels.<br /><br /><b>Default: 250</b><br />', @cgi, 106, NOW(), NOW(), NULL, NULL),
+(NULL, 'Image Fade Duration', 'ZEN_LIGHTBOX_IMAGE_FADE_DURATION', '400', '<br />Controls the fade duration of images.<br /><br />Note: This value is measured in milliseconds.<br /><br /><b>Default: 400</b><br />', @cgi, 107, NOW(), NOW(), NULL, NULL),
+(NULL, 'Caption Animation Duration', 'ZEN_LIGHTBOX_CAPTION_ANIMATION_DURATION', '400', '<br />Controls the animation duration of the caption.<br /><br />Note: This value is measured in milliseconds.<br /><br /><b>Default: 400</b><br />', @cgi, 108, NOW(), NOW(), NULL, NULL),
+(NULL, 'Display Image Counter', 'ZEN_LIGHTBOX_COUNTER', 'true', '<br />If true, the image counter will be displayed (below the caption of each image) within the lightbox.<br /><br /><b>Default: true</b>', @cgi, 109, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''),'),
+(NULL, 'Close on Image Click', 'ZEN_LIGHTBOX_CLOSE_IMAGE', 'false', '<br />If true, the lightbox will close when the image being displaying is clicked.<br /><br /><b>Default: false</b>', @cgi, 110, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''), '),
+(NULL, 'Close on Overlay Click', 'ZEN_LIGHTBOX_CLOSE_OVERLAY', 'false', '<br />If true, the lightbox will close when the overlay is clicked.<br /><br /><b>Default: false</b>', @cgi, 111, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''), '),
+(NULL, 'Always show Prev / Next', 'ZEN_LIGHTBOX_PREV_NEXT', 'false', '<br />If true, the lightbox will always show Previous & Next buttons when using additional images. NOTE: This setting will be overwritten automatically when Close on Image Click is set to TRUE.<br /><br /><b>Default: false</b>', @cgi, 112, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''), '),
+(NULL, '<b>Keyboard Navigation</b>', 'ZEN_LIGHTBOX_KEYBOARD_NAVIGATION', 'true', '<br />If true, keyboard inputs will also be used to control the lightbox.<br /><br /><b>Default: true</b>', @cgi, 200, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''), '),
+(NULL, 'Close Lightbox', 'ZEN_LIGHTBOX_ESCAPE_KEYS', '27,88,67', '<br />The lightbox will close when any of these keys are pressed.<br /><br />Note: Only <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> decimal values should be entered and separated with a comma (if listing multiple values).<br /><br /><b>Default: 27,88,67</b><br />', @cgi, 201, NOW(), NOW(), NULL, NULL),
+(NULL, 'Previous Image', 'ZEN_LIGHTBOX_PREVIOUS_KEYS', '37,80', '<br />The lightbox will display the previous image (if available) when any of these keys are pressed.<br /><br />Note: Only <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> decimal values should be entered and separated with a comma (if listing multiple values).<br /><br /><b>Default: 37,80</b><br />', @cgi, 202, NOW(), NOW(), NULL, NULL),
+(NULL, 'Next Image', 'ZEN_LIGHTBOX_NEXT_KEYS', '39,78', '<br />The lightbox will display the next image (if available) when any of these keys are pressed.<br /><br />Note: Only <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> decimal values should be entered and separated with a comma (if listing multiple values).<br /><br /><b>Default: 39,78</b><br />', @cgi, 203, NOW(), NOW(), NULL, NULL),
+(NULL, '<b>Gallery Mode</b>', 'ZEN_LIGHTBOX_GALLERY_MODE', 'true', '<br />If true, the lightbox will allow additional images to quickly be displayed using previous and next buttons.<br /><br /><b>Default: true</b>', @cgi, 300, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''),'),
+(NULL, 'Include Main Image in Gallery', 'ZEN_LIGHTBOX_GALLERY_MAIN_IMAGE', 'true', '<br />If true, the main product image will be included in the lightbox gallery.<br /><br /><b>Default: true</b>', @cgi, 301, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''),'),
+(NULL, '<b>EZ-Pages Support</b>', 'ZEN_LIGHTBOX_EZPAGES', 'true', '<br />If true, the lightbox effect will be used for linked images on all EZ-Pages.<br /><br /><b>Default: true</b>', @cgi, 400, NOW(), NOW(), NULL, 'zen_cfg_select_option(array(''true'', ''false''),'),
+(NULL, 'File Types', 'ZEN_LIGHTBOX_FILE_TYPES', 'jpg,png,gif', '<br />On EZ-Pages, the lightbox effect will be applied to all images with one of the following file types.<br /><br /><b>Default: jpg,png,gif</b><br />', @cgi, 401, NOW(), NOW(), NULL, NULL);
+
+
+/*
+zencart 1.5 mods
+*/
+INSERT INTO `admin_pages` (`page_key` ,`language_key` ,`main_page` ,`page_params` ,`menu_key` ,`display_on_menu` ,`sort_order`)VALUES 
+('configZenLightbox', 'BOX_CONFIGURATION_ZEN_LIGHTBOX', 'FILENAME_CONFIGURATION', CONCAT('gID=',@cgi), 'configuration', 'Y', @cgi);
+
+
+SELECT @ZXconfig:=configuration_group_id
+FROM configuration_group
+WHERE configuration_group_title= 'ZX AJAX Cart'
+LIMIT 1;
+DELETE FROM configuration WHERE configuration_group_id = @ZXconfig AND configuration_group_id != 0;
+DELETE FROM configuration_group WHERE configuration_group_id = @ZXconfig AND configuration_group_id != 0;
+INSERT INTO configuration_group (configuration_group_id, configuration_group_title, configuration_group_description, sort_order, visible) VALUES (NULL, 'ZX AJAX Cart', 'ZX AJAX Add to Cart', '1', '1');
+SET @ZXconfig=last_insert_id();
+UPDATE configuration_group SET sort_order = @ZXconfig WHERE configuration_group_id = @ZXconfig;
+INSERT INTO configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, use_function, set_function) VALUES 
+(NULL, 'ZX AJAX Cart', 'ZX_AJAX_CART_STATUS', 'true', 'Activate ZX AJAX Add to Cart', @ZXconfig, 10, NOW(), NULL, 'zen_cfg_select_option(array(\'true\', \'false\'),'),
+(NULL, 'Use jQuery', 'ZX_AJAX_CART_JQUERY', 'false', 'If your template is already utilizing jQuery, keep this disabled. If you\'re not loading jQuery, please set to true.', @ZXconfig, 20, NOW(), NULL, 'zen_cfg_select_option(array(\'false\', \'true\'),'),
+(NULL, 'Show Close Cart button', 'ZX_AJAX_CART_CLOSE_BUTTON', 'true', 'Do you want to show the Close Cart button in the slider?', @ZXconfig, 25, NOW(), NULL, 'zen_cfg_select_option(array(\'false\', \'true\'),'),
+(NULL, ' Effect', 'ZX_AJAX_CART_FADE_DELAY', '6000', 'How long is the popup shown before it fades out (in miliseconds)', @ZXconfig, 30, NOW(), NULL, NULL),
+(NULL, 'ZX AJAX Add to Cart Version', 'ZX_AJAX_CART_VERSION', '1.1', 'Currently using: <strong>v1.1</strong><br />Module brought to you by <a href="http://www.zenexpert.com" target="_blank">ZenExpert</a>', @ZXconfig, 50, NOW(), NULL, 'zen_cfg_select_option(array(\'1.1\'),');
+# Register the configuration page for Admin Access Control
+DELETE FROM admin_pages WHERE page_key = 'configZXAjaxCart';
+INSERT IGNORE INTO admin_pages (page_key,language_key,main_page,page_params,menu_key,display_on_menu,sort_order) VALUES ('configZXAjaxCart','BOX_CONFIGURATION_ZX_AJAX_CART','FILENAME_CONFIGURATION',CONCAT('gID=',@ZXconfig),'configuration','Y',@ZXconfig);
+
+# Register the configuration page for Admin Access Control
+DELETE FROM admin_pages WHERE page_key = 'configZXAjaxCart';
+INSERT IGNORE INTO admin_pages (page_key,language_key,main_page,page_params,menu_key,display_on_menu,sort_order) VALUES ('configZXAjaxCart','BOX_CONFIGURATION_ZX_AJAX_CART','FILENAME_CONFIGURATION',CONCAT('gID=',@ZXconfig),'configuration','Y',@ZXconfig);
+
+#-----------------------------------------------------------------------BOF COMPARE MULTIPLE PRODUCT ----------------------------------------------------------------
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Max Products to Compare', 'COMPARE_VALUE_COUNT', '4', 'The number of products to compare at one time.', '19', '150', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Max Products to Compare', 'COMPARE_DESCRIPTION', '150', 'How many characters max to show of the products description.', '19', '151', now());
+
+#-----------------------------------------------------------------------EOF COMPARE MULTIPLE PRODUCT ----------------------------------------------------------------
+
+
+
+#-----------------------------------------------------------------------BOF Wish List ------------------------------------------------------------------------------
+
+SELECT @cid:=configuration_group_id
+FROM configuration_group
+WHERE configuration_group_title= 'Wish list';
+DELETE FROM configuration WHERE configuration_group_id = @cid;
+DELETE FROM configuration_group WHERE configuration_group_id = @cid;
+
+INSERT INTO configuration_group VALUES (NULL, 'Wish list', 'Settings for Wish list', '1', '1');
+
+
+SET @cid=last_insert_id();
+UPDATE configuration_group SET sort_order = @cid WHERE configuration_group_id = @cid;
+
+INSERT INTO configuration VALUES (NULL, 'Wishlist Module Switch', 'UN_DB_MODULE_WISHLISTS_ENABLED', 'true', 'Set this option true or false to enable or disable the 
+
+wishlist', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('true', 'false'),");
+INSERT INTO configuration VALUES (NULL, 'Wishlist sidebox header link', 'UN_DB_SIDEBOX_LINK_HEADER', 'true', 'Set this option true or false to make the sidebox 
+
+header a link to the wishlist page.', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('true', 'false'),");
+INSERT INTO configuration VALUES (NULL, 'Wishlist allow multiple lists', 'UN_DB_ALLOW_MULTIPLE_WISHLISTS', 'true', 'Set this option true or false to allow for more 
+
+than 1 wishlist', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('true', 'false'),");
+INSERT INTO configuration VALUES (NULL, 'Wishlist display category filter', 'UN_DB_DISPLAY_CATEGORY_FILTER', 'true', 'Set this option true or false to enable a 
+
+category filter', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('true', 'false'),");
+INSERT INTO configuration VALUES (NULL, 'Wishlist default name', 'DEFAULT_WISHLIST_NAME', 'Default', 'Enter the name you want to be assigned to the initial 
+
+wishlist.', @cid, NULL, now(), now(), NULL, NULL);
+INSERT INTO configuration VALUES (NULL, 'Wishlist show list after product addition', 'DISPLAY_WISHLIST', 'true', 'Set this option true or false to show the wishlist 
+
+after a product was added to the wishlist', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('true', 'false'),");
+INSERT INTO configuration VALUES (NULL, 'Wishlist display max items in extended view', 'UN_MAX_DISPLAY_EXTENDED', '10', 'Enter the maximum amount of products you 
+
+want to show in extended view.<br />default = 10', @cid, NULL, now(), now(), NULL, NULL);
+INSERT INTO configuration VALUES (NULL, 'Wishlist display max items in compact view', 'UN_MAX_DISPLAY_COMPACT', '20', 'Enter the maximum amount of products you want 
+
+to show in extended view.<br />default = 20', @cid, NULL, now(), now(), NULL, NULL);
+INSERT INTO configuration VALUES (NULL, 'Wishlist default view Switch', 'UN_DEFAULT_LIST_VIEW', 'extended', 'Set the default view of the list to compact or extended 
+
+view', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('compact', 'extended'),");
+INSERT INTO configuration VALUES (NULL, 'Wishlist allow multiple products to cart', 'UN_DB_ALLOW_MULTIPLE_PRODUCTS_CART_COMPACT', 'false', 'Set this option true or 
+
+false to allow multiple products to be moved in the cart via checkboxes in compact view', @cid, NULL, now(), now(), NULL, "zen_cfg_select_option(array('true', 
+
+'false'),");
+
+
+DELETE FROM admin_pages WHERE page_key='configWishlist';
+INSERT INTO admin_pages (page_key,language_key,main_page,page_params,menu_key,display_on_menu,sort_order) VALUES 
+
+('configWishlist','BOX_CONFIGURATION_WISH_LIST','FILENAME_CONFIGURATION',CONCAT('gID=',@cid), 'configuration', 'Y', @cid);  
+
+# --------------------------------------------------------
+#
+# Table structure for table un_wishlists
+#
+# avoid data loss when reinstall (this will give a table exists error)
+# if you want the table to be removed, then reinstalled; uncomment line below
+DROP TABLE IF EXISTS un_wishlists;
+CREATE TABLE IF NOT EXISTS un_wishlists (
+  id int(11) NOT NULL auto_increment,
+  customers_id int(11) NOT NULL default '0',
+  created datetime NOT NULL default '0000-00-00 00:00:00',
+  modified datetime NOT NULL default '0000-00-00 00:00:00',
+  name varchar(255) default NULL,
+  comment varchar(255) default NULL,
+  default_status tinyint(1) NOT NULL default '0',
+  public_status tinyint(1) NOT NULL default '1',
+  PRIMARY KEY  (id)
+);
+INSERT INTO un_wishlists VALUES (1, 0, now(), now(), 'donotuse', 'donotuse', 0, 0);
+
+# --------------------------------------------------------
+#
+#April 2011 v0.8 added column
+#added column for attributes, if you need to just add the column to an existing table use:
+#alter table un_products_to_wishlists add column attributes VARCHAR(255);
+#in the sql patch tool in zen cart
+#
+# Table structure for table un_products_to_wishlists
+#
+
+# avoid data loss when reinstall (this will give a table exists error)
+# if you want the table to be removed, then reinstalled; uncomment line below
+DROP TABLE IF EXISTS un_products_to_wishlists;
+CREATE TABLE IF NOT EXISTS un_products_to_wishlists (
+  products_id int(11) NOT NULL default '0',
+  un_wishlists_id int(11) NOT NULL default '0',
+  created datetime NOT NULL default '0000-00-00 00:00:00',
+  modified datetime NOT NULL default '0000-00-00 00:00:00',
+  quantity int(2) NOT NULL default '1',
+  priority int(1) NOT NULL default '2',
+  comment varchar(255) default NULL,
+  attributes varchar(255) default NULL,
+  PRIMARY KEY  (products_id,un_wishlists_id)
+);
+
+#-----------------------------------------------------------------------EOF Wish List ------------------------------------------------------------------------------
+
+#Column Layout Grid for Product Listing (Add On Module for Zen Cart v1.5.x) 2012-11-17
+#Run the following SQL commands into your database. 
+#The easiest way is to open Admin->Tools->Install SQL Patches and paste them in the box and click Send.
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+##  If you are installing this plugin for the first time, or upgrading from an earlier version of this module, run this set of SQL statements:
+
+delete from configuration where configuration_key in ('PRODUCT_LISTING_LAYOUT_STYLE');
+delete from configuration where configuration_key in ('PRODUCT_LISTING_COLUMNS_PER_ROW');
+delete from configuration where configuration_key in ('PRODUCT_LISTING_LAYOUT_STYLE_CUSTOMER');
+delete from configuration where configuration_key in ('PRODUCT_LISTING_GRID_SORT');
+
+
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, 
+       configuration_description, configuration_group_id, sort_order, 
+       last_modified, date_added, use_function, set_function) 
+       VALUES ('Product Listing - Layout Style', 'PRODUCT_LISTING_LAYOUT_STYLE', 'rows', 
+               'Select the layout style:<br />Each product can be listed in its own row (rows option)
+                or products can be listed in multiple columns per row (columns option)<br />
+				If customer control is enabled this sets the default style.', '8', '41', NULL, 
+                now(), NULL, 'zen_cfg_select_option(array(\'rows\', \'columns\'),');
+
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, 
+       configuration_description, configuration_group_id, sort_order, 
+       last_modified, date_added, use_function, set_function) 
+       VALUES ('Product Listing - Columns Per Row', 'PRODUCT_LISTING_COLUMNS_PER_ROW', '3', 
+               'Select the number of columns of products to show in each row in the product listing.  
+               The default setting is 3.', '8', '42', NULL, now(), NULL, NULL);
+
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, 
+       configuration_description, configuration_group_id, sort_order, 
+       last_modified, date_added, use_function, set_function) 
+       VALUES ('Product Listing - Layout Style - Customer Control', 'PRODUCT_LISTING_LAYOUT_STYLE_CUSTOMER', '1', 
+               'Allow the customer to select the layout style (0=no, 1=yes):', '8', '43', NULL, 
+                now(), NULL, 'zen_cfg_select_option(array(\'0\', \'1\'),');
+
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, 
+       configuration_description, configuration_group_id, sort_order, 
+       last_modified, date_added, use_function, set_function) 
+       VALUES ('Product Listing - Show Sorter for Columns Layout', 'PRODUCT_LISTING_GRID_SORT', '1', 
+               'Allow the customer to select the item sort order (0=no, 1=yes):', '8', '44', NULL, 
+                now(), NULL, 'zen_cfg_select_option(array(\'0\', \'1\'),');
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
